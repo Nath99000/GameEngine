@@ -28,6 +28,8 @@ public class RunProgram {
         Entity entity = new Entity(model1, new Vector3f(0.5f, 0, 0), 0, 0, 0, 1);
         Camera camera = new Camera();
 
+        shader.getTheUniformLocations();
+
         while (!Display.isCloseRequested()) {
             camera.move();
             renderer.prepare();

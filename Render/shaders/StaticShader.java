@@ -19,9 +19,13 @@ public class StaticShader extends ShaderHelper{
 
     @Override
     protected void getAllUniformLocations() {
-        locationTransformationMatrix = super.getUniformLocation("tranformationMatrix");
+        locationTransformationMatrix = super.getUniformLocation("transformationMatrix");
         locationProjectionMatrix = super.getUniformLocation("projectionMatrix");
-        locationViewMatrix = super.getUniformLocation("locationViewMatrix");
+        locationViewMatrix = super.getUniformLocation("viewMatrix");
+    }
+
+    public void getTheUniformLocations(){
+        getAllUniformLocations();
     }
 
     @Override

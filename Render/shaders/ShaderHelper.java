@@ -23,6 +23,7 @@ public abstract class ShaderHelper {
 
     //vertex and fragment
     public ShaderHelper(String vPath, String fPath){
+        getAllUniformLocations();
         vertexShaderID = loadShader(vPath, GL20.GL_VERTEX_SHADER);
         fragmentShaderID = loadShader(fPath, GL20.GL_FRAGMENT_SHADER);
         programID = GL20.glCreateProgram();
