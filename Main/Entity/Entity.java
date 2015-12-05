@@ -1,5 +1,6 @@
 package Game.Main.Entity;
 
+import Game.Render.Models.RawModel;
 import Game.Render.Models.TexturedModel;
 import org.lwjgl.util.vector.Vector3f;
 
@@ -20,6 +21,15 @@ public class Entity {
             this.scale = scale;
 
             	}
+	public Entity(RawModel model, Vector3f position, float rotX, float rotY, float rotZ, float scale) {
+		super();
+		this.position = position;
+		this.rotX = rotX;
+		this.rotY = rotY;
+		this.rotZ = rotZ;
+		this.scale = scale;
+
+	}
 
                 	public void increasePosition(float dx, float dy, float dz) {
             		this.position.x += dx;
